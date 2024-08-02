@@ -256,6 +256,7 @@ int main()
 
         default:
             printf("Invalid Operation - Exiting Program");
+            op=0;
             break;
     }
    }while (op>0);
