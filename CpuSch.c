@@ -131,6 +131,7 @@ int main()
             break;
 
         case 3:
+            
             printf("****** Priority Scheduling ******\n");
             printf("\nEnter the no.of processes \n");
             scanf("%d",&n);
@@ -179,10 +180,11 @@ int main()
             }
             
             printf("\n======================================\n");
+            int temppp=0;
             for( i=0; i<=n; i++)
             {
-                printf("%d\t",tempp);
-                tempp=tempp+bt[i];
+                printf("%d\t",temppp);
+                temppp=temppp+bt[i];
             }
             printf("\n");
             break;
