@@ -14,7 +14,7 @@ void bubbleSort(int arr[], int n) {
 }
 int head, a[20], i, distance, n, seektime, size;
 int main()
-{   int op;
+{   int check=1,op;
     do{
     printf("Select the Disk Schduling Algorithm that you would like to perform:\n1.C-SCAN\n2.SCAN\n3.FCFS\nYour Choice: ");
     scanf("%d",&op);
@@ -81,7 +81,7 @@ int main()
                 }
 
                 printf("\nTotal seek time is : %d\n", seektime);
-                return 0;
+               
             break;
         case 2:
             
@@ -169,12 +169,11 @@ int main()
             }
             printf("Total seek time is : %d\n",seektime);
             break;
-        case 4:
-            break;
+
         default:
             printf("Invalid Input - Exiting Operation");
-            op=0;
+            check=0;
             break;
     }
-    }while(op>0);
+    }while(check==1);
 }
