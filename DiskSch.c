@@ -22,7 +22,7 @@ int main()
     {
         case 1:
             
-
+                seektime=0;
                 printf("\nEnter Head position: ");
                 scanf("%d", &head);
 
@@ -85,7 +85,7 @@ int main()
             break;
         case 2:
             
-
+            seektime=0;
             printf("\nEnter Head position: ");
             scanf("%d", &head);
 
@@ -148,10 +148,10 @@ int main()
 
 
             printf("\nTotal seek time is : %d\n", seektime);
-            return 0;
+            
             break;
         case 3:
-
+            seektime=0;
             printf("\nEnter Head position:");
             scanf("%d",&head);
             printf("\nEnter number of disk requests:");
@@ -175,5 +175,5 @@ int main()
             check=0;
             break;
     }
-    }while(check==1);
+    }while(check>0);
 }

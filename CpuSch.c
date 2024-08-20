@@ -122,6 +122,7 @@ int main()
             }
             
             printf("\n======================================\n");
+            tempp=0;
             for( i=0; i<=n; i++)
             {
                 printf("%d\t",tempp);
